@@ -1,4 +1,4 @@
-/* Basic Cart Section Styling */
+
 .cart-item {
     border-bottom: 1px solid #ddd;
     padding: 15px 0;
@@ -73,7 +73,6 @@ tr {
     color: #d4a017 !important;
 }
 
-/* Footer Section Styling */
 .footer {
     background-color: #f8f4ee;
 }
@@ -89,7 +88,6 @@ tr {
     color: #6c757d;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .cart-title {
         font-size: 24px;
