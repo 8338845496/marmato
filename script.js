@@ -14,13 +14,12 @@ function updateCartTotals() {
 
 function renderCartItems() {
     const cartItemsContainer = document.getElementById('cart-items');
-    cartItemsContainer.innerHTML = ''; // Clear existing items
+    cartItemsContainer.innerHTML = ''; 
 
     cartData.forEach((item, index) => {
-        // Log to check the item object and image structure
+       
         console.log(item);
 
-        // Ensure image exists, if not use a fallback
         const imageUrl = item.image && item.image.src ? item.image.src : "https://cdn.shopify.com/s/files/1/0883/2188/4479/files/Asgaardsofa3.png?v=1728384481";
 
         const cartItemHTML = `
@@ -61,10 +60,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 title: item.title,
                 price: item.presentment_price,
                 quantity: item.quantity,
-                image: item.image // Assuming the image data is here
+                image: item.image 
             }));
 
-            // Render the cart items (images included)
+         
             renderCartItems();
         })
         .catch(err => console.error("Error fetching cart data:", err));
